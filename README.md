@@ -15,20 +15,14 @@ This project aims to reconstruct 3D scenes using only a standard video input. It
   - intermediate visualizations of rays, depth sampling and rendered frames,
   - quick sanity checks before moving the code into the scripted pipeline in `EXP05-05_nerf_model.py`.
 
-### Anim_NERF & Visualization
-* `EXP04-01_simplenerf.py`: A simplified/baseline NeRF implementation.
-* `EXP04-02_NeRF Rendering and Visualization.py`: Rendering tools for the simplified model.
-
-
-### Simple NERF & Visualization
+### Simple_NERF & Visualization
 * `EXP04-01_simplenerf.py`: A simplified/baseline NeRF implementation.
 * `EXP04-02_NeRF Rendering and Visualization.py`: Rendering tools for the simplified model.
 
 ---
 
-## 📂 Repository Structure
+## Experiment 05
 
-The project is organized into sequential experiments (`EXP`). The core pipeline is contained within the `EXP05` series.
 
 ### Core Pipeline
 | File Name | Description |
@@ -48,7 +42,7 @@ The project is organized into sequential experiments (`EXP`). The core pipeline 
 
 ---
 
-## 🛠️ Installation & Prerequisites
+##  Installation & Prerequisites
 
 Ensure you have Python 3.x installed. It is recommended to use a virtual environment.
 
@@ -59,5 +53,6 @@ cd 3D-CNN-NERF-Monocular-Video
 
 # Install dependencies (Example)
 pip install torch torchvision numpy opencv-python matplotlib
+
 
 
