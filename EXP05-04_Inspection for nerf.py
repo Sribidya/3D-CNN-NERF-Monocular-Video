@@ -1,4 +1,4 @@
-
+########helper file to inspect data files for nerf training########
 import os
 import pickle
 import glob
