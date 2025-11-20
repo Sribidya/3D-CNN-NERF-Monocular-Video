@@ -7,12 +7,9 @@ A PyTorch implementation for generating Neural Radiance Fields (NeRF) from a sin
 
 This project aims to reconstruct 3D scenes using only a standard video input. It leverages deep learning techniques to synthesize novel views by learning the scene's geometry and view-dependent appearance.
 
-### Key Features
-* **Frame Extraction:** Automated tools to convert video into image sequences.
-* **Preprocessing:** Normalization and resizing pipelines optimized for NeRF.
-* **Pose Estimation:** Generation of camera intrinsics and extrinsics from monocular data.
-* **Ray Inspection:** Visualization tools to debug ray marching and camera alignment.
-* **NeRF Training:** Custom implementation of the NeRF training loop.
+### Simple NERF & Visualization
+* `EXP04-01_simplenerf.py`: A simplified/baseline NeRF implementation.
+* `EXP04-02_NeRF Rendering and Visualization.py`: Rendering tools for the simplified model.
 
 ---
 
@@ -28,10 +25,13 @@ The project is organized into sequential experiments (`EXP`). The core pipeline 
 | `EXP05-03_camera generation.py` | **Step 3:** Generates camera parameters (extrinsics/intrinsics) for each frame. |
 | `EXP05-04_Inspection for nerf.py` | **Step 4:** Visualization tool to inspect rays and camera poses before training. |
 | `EXP05-05_nerf_model.py` | **Step 5:** The main training script for the Neural Radiance Field. |
+### Key Features
+* **Frame Extraction:** Automated tools to convert video into image sequences.
+* **Preprocessing:** Normalization and resizing pipelines optimized for NeRF.
+* **Pose Estimation:** Generation of camera intrinsics and extrinsics from monocular data.
+* **Ray Inspection:** Visualization tools to debug ray marching and camera alignment.
+* **NeRF Training:** Custom implementation of the NeRF training loop.
 
-### Legacy & Visualization
-* `EXP04-01_simplenerf.py`: A simplified/baseline NeRF implementation.
-* `EXP04-02_NeRF Rendering and Visualization.py`: Rendering tools for the simplified model.
 
 ---
 
@@ -46,3 +46,4 @@ cd 3D-CNN-NERF-Monocular-Video
 
 # Install dependencies (Example)
 pip install torch torchvision numpy opencv-python matplotlib
+
