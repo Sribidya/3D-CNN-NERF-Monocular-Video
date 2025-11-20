@@ -1,7 +1,7 @@
 ﻿# 3D-CNN-NERF-Monocular-Video
 
 
-A PyTorch implementation for generating Neural Radiance Fields (NeRF) from a single monocular video source. This repository provides a complete pipeline, ranging from extracting frames from raw video footage to estimating camera poses and training the final NeRF model for 3D scene reconstruction.
+A PyTorch implementation for generating Neural Radiance Fields (NeRF) from a single monocular video source.
 
 ## 📝 Project Overview
 
@@ -54,6 +54,7 @@ cd 3D-CNN-NERF-Monocular-Video
 
 # Install dependencies (Example)
 pip install torch torchvision numpy opencv-python matplotlib
+
 
 
 
