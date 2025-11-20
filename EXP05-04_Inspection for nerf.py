@@ -1,6 +1,12 @@
 
 import os
 import pickle
+import glob
+import numpy as np
+from PIL import Image
+import h5py
+import pickle
+
 
 def check_smpl_model(pkl_path):
     """
@@ -26,12 +32,12 @@ def check_smpl_model(pkl_path):
     else:
         print(f"[UNKNOWN TYPE]{pkl_path}keys/attributes{keys}")
 
-# Example usage:
+
 dataset_folder = "dataset/people_snapshot_public/female-1-casual" 
 for file in os.listdir(dataset_folder):
     if file.endswith(".pkl"):
         check_smpl_model(os.path.join(dataset_folder, file))
-import h5py
+
 
 h5_path = "dataset/people_snapshot_public/female-1-casual/reconstructed_poses.hdf5"
 with h5py.File(h5_path, "r") as f:
@@ -40,27 +46,12 @@ with h5py.File(h5_path, "r") as f:
         print(name)
     f.visit(print_name)
 
-
-import pickle
-
-cam = pickle.load(open("dataset/people_snapshot_public/female-1-casual/camera.pkl", "rb"), encoding="latin1")
-print(cam['camera_k'])
-print("shape:", cam['camera_k'].shape)
-
-
-import numpy as np
-
 cam = np.load("output/female-1-casual/cameras.npz")
-print("Keys:", cam.files)   # NOT cam.keys()
-
-import numpy as np
+print("Keys:", cam.files)  
 data = np.load("output/female-1-casual/cameras.npz")
-print(data.files)            # should show ['intrinsic', 'extrinsic']
-print(data['extrinsic'].shape)  # should print (757, 4, 4)
+print(data.files)            
+print(data['extrinsic'].shape)  
 
-import glob
-import numpy as np
-from PIL import Image
 
 # Load images
 img_files = sorted(glob.glob("output/female-1-casual/images/*.*"))
