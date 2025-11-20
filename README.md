@@ -7,6 +7,14 @@ A PyTorch implementation for generating Neural Radiance Fields (NeRF) from a sin
 
 This project aims to reconstruct 3D scenes using only a standard video input. It leverages deep learning techniques to synthesize novel views by learning the scene's geometry and view-dependent appearance.
 
+### Experimental Notebooks
+- `EXP01-EXP03/anim_nerf.ipynb` — Colab-friendly exploratory notebook used for early prototyping of the NeRF pipeline.  
+  It contains:
+  - an end-to-end training loop for the baseline NeRF model on a small subset of the PeopleSnapshot data,
+  - experiments with different hyperparameters (number of rays, samples per ray, learning rate),
+  - intermediate visualizations of rays, depth sampling and rendered frames,
+  - quick sanity checks before moving the code into the scripted pipeline in `EXP05-05_nerf_model.py`.
+
 ### Anim_NERF & Visualization
 * `EXP04-01_simplenerf.py`: A simplified/baseline NeRF implementation.
 * `EXP04-02_NeRF Rendering and Visualization.py`: Rendering tools for the simplified model.
