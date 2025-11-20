@@ -33,7 +33,8 @@ This project aims to reconstruct 3D scenes using only a standard video input. It
 | `EXP05-04_Inspection for nerf.py` | **Step 4:** Visualization tool to inspect rays and camera poses before training. |
 | `EXP05-05_nerf_model.py` | **Step 5:** The main training script for the Neural Radiance Field. |
 ### Key Features
-* **Frame Extraction:** Automated tools to convert video into image sequences.
+* **dataset:** Only the first subject **female-1-casual** from **people_snapshot_public** is added as the experiments were created on this subject.
+* **Frame Extraction:** Automated tools to convert video into image sequences. Currently the ..\output\female-1-casual\images conatisn samples of few frames ( as it was becoming a huge file when the `EXP05-01_extract_frames.py` will be run it automatically will create 757 frames for the first subject female-1-casual
 * **Preprocessing:** Normalization and resizing pipelines optimized for NeRF.
 * **Pose Estimation:** Generation of camera intrinsics and extrinsics from monocular data.
 * **Ray Inspection:** Visualization tools to debug ray marching and camera alignment.
@@ -53,6 +54,7 @@ cd 3D-CNN-NERF-Monocular-Video
 
 # Install dependencies (Example)
 pip install torch torchvision numpy opencv-python matplotlib
+
 
 
 
